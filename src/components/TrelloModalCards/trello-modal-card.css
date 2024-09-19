@@ -1,0 +1,80 @@
+.trello-modal-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+}
+.trello-modal-card__header {
+  display: flex;
+  justify-content: space-between;
+}
+.trello-modal-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(56, 57, 61);
+}
+.trello-modal-card__close {
+  cursor: pointer;
+}
+.trello-modal-card__subtitle {
+  font-size: 12px;
+  color: rgb(113, 116, 124);
+  margin-top: 4px;
+}
+.trello-modal-card__buttons {
+  display: flex;
+  column-gap: 4px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.trello-modal-card-label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin-top: 20px;
+}
+.trello-modal-card-label__title {
+  font-size: 12px;
+  color: rgb(113, 116, 124);
+}
+.trello-modal-card-label__select {
+  background-color: rgb(240, 243, 248);
+}
+.trello-modal-card-label__number {
+  max-width: 80px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, 0.26);
+}
+.modal__modal {
+  position: relative;
+  z-index: 5;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=trello-modal-card.css.map */

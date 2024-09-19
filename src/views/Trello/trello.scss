@@ -1,0 +1,148 @@
+.trello {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  max-width: 1340px;
+
+  &__stages {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+}
+
+.trello-stage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: rgba(213, 220, 229, 1);
+  min-width: 320px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrows {
+    display: flex;
+  }
+
+  &__arrow {
+    cursor: pointer;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(56, 57, 61, 1);
+    padding-left: 12px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -2px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: rgba(125, 140, 161, 1);
+      content: '';
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__button {
+    padding: 8px 20px;
+    width: 100%;
+    font-size: 13px;
+    color: rgba(125, 140, 161, 1);
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.trello-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  padding: 12px;
+  min-height: 120px;
+
+  &__header {
+    display: flex;
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(56, 57, 61, 1);
+    margin-right: 8px;
+  }
+
+  &__icons {
+    display: flex;
+    column-gap: 4px;
+    flex-grow: 1;
+  }
+
+  &__icon {
+    cursor: pointer;
+
+    &--menu {
+      margin-left: auto;
+    }
+  }
+
+  &__body {
+    flex-grow: 1;
+  }
+
+  &__description {
+    font-size: 12px;
+    color: rgba(113, 116, 124, 1);
+
+    strong {
+      color: rgba(56, 57, 61, 1);
+      font-weight: 600;
+    }
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4px;
+    row-gap: 4px;
+  }
+
+  &__chip {
+    background-color: rgba(229, 233, 239, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(210, 218, 228, 1);
+    font-size: 12px;
+    color: rgba(125, 140, 161, 1);
+    padding: 4px 8px;
+  }
+}
+
+.trello-card-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(125, 140, 161, 1);
+  min-height: 120px;
+  border: 1px dashed rgba(186, 196, 208, 1);
+}
+
+

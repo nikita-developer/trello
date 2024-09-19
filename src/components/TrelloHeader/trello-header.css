@@ -1,0 +1,27 @@
+.trello-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trello-header__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(56, 57, 61);
+}
+.trello-header__nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+.trello-header__project {
+  font-size: 12px;
+  color: rgb(113, 116, 124);
+}
+.trello-header__project span {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+/*# sourceMappingURL=trello-header.css.map */

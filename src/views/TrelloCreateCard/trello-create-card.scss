@@ -1,0 +1,87 @@
+.trello-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trello-create-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 380px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(56, 57, 61, 1);
+  }
+
+  &__close {
+    cursor: pointer;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    color: rgba(113, 116, 124, 1);
+    margin-top: 4px;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 4px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+.trello-create-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin-top: 20px;
+
+  &__title {
+    font-size: 12px;
+    color: rgba(113, 116, 124, 1);
+  }
+
+  &__select {
+    background-color: rgba(240, 243, 248, 1);
+  }
+
+  &__number {
+    max-width: 80px;
+  }
+}
+
+.trello-create-card-label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  margin-top: 20px;
+
+  &__title {
+    font-size: 12px;
+    color: rgba(113, 116, 124, 1);
+  }
+
+  &__select {
+    background-color: rgba(240, 243, 248, 1);
+  }
+
+  &__number {
+    max-width: 80px;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
