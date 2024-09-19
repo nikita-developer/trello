@@ -24,9 +24,9 @@
               <div class="trello-card__header">
                 <div class="trello-card__name">{{ element.title }}</div>
                 <div class="trello-card__icons">
-                  <div class="trello-card__icon"><img src="@/assets/img/copy.svg" alt="Скопировать"></div>
+                  <div class="trello-card__icon" @click="isVisibleUpdate( true, element)"><img src="@/assets/img/copy.svg" alt="Обновить"></div>
                   <div class="trello-card__icon" @click="removeAt(stage_index, index)"><img src="@/assets/img/delete.svg" alt="Удалить"></div>
-                  <div class="trello-card__icon trello-card__icon--menu" @click="isVisibleUpdate( true, element)"><img src="@/assets/img/menu.svg" alt="Обновить"></div>
+                  <div class="trello-card__icon trello-card__icon--menu"><img src="@/assets/img/menu.svg" alt="Меню"></div>
                 </div>
               </div>
               <div class="trello-card__body">
