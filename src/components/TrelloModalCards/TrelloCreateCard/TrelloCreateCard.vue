@@ -52,7 +52,7 @@ const create = () => {
           <div class="trello-modal-card__title">Добавление</div>
           <div class="trello-modal-card__close" @click="emit('close')"><img src="../../../assets/img/close.svg" alt="Закрыть"></div>
         </div>
-        <div class="trello-modal-card__subtitle">{{props.stage.name}}</div>
+        <div class="trello-modal-card__subtitle">{{props?.stage?.name}}</div>
         <label class="trello-modal-card-label">
           <span class="trello-modal-card-label__title">Заголовок *:</span>
           <input type="text" class="trello-modal-card-label__field" :maxlength="70" @input="errorMessage('title')" v-model="card.title">

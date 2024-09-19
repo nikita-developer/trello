@@ -10,12 +10,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => Trello
+      component: Trello
     },
     {
       path: '/create-card',
       name: 'create-card',
-      component: () => TrelloCreateCard
+      component: TrelloCreateCard
     }
   ]
 })
